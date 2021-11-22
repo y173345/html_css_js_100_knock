@@ -13,9 +13,19 @@
     {
         document.querySelector('input').value += _v
     }
+    function calc() {   // calculate when '=' button is clicked
+        const v = document.querySelector('input').value
+        const f = new Function('return ' + v)
+        update(f().toString())
+    }
 </script>
 <button onclick="append('1')">1</button>
 <button onclick="append('2')">2</button>
+<button onclick="append('3')">3</button>
+<button onclick="append('+')">+</button>
+<button onclick="append('-')">-</button>
+
+<button onclick="calc()">=</button>
 
 <button onclick="update('')">CLR</button>
 </body>
