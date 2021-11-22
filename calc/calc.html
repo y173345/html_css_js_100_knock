@@ -15,8 +15,12 @@
     }
     function calc() {   // calculate when '=' button is clicked
         const v = document.querySelector('input').value
-        const f = new Function('return ' + v)
-        update(f().toString())
+        try {
+            const f = new Function('return ' + v)
+            update(f().toString())
+        } catch (error) {
+            update(error)
+        }
     }
 </script>
 <button onclick="append( '1' )" >1</button>
