@@ -4,9 +4,19 @@
 <body>
 <div>Hello Calc!</div>
 <input />
-<button onclick="document.querySelector( 'input' ).value += '1' " >123</button>
-<button onclick="document.querySelector( 'input' ).value += '2' " >123</button>
+<script>
+    function update(_v) // fuction for update input tag
+    {
+        document.querySelector('input').value = _v
+    }
+    function append(_v) // add a number to the back when button is clicked
+    {
+        document.querySelector('input').value += _v
+    }
+</script>
+<button onclick="append('1')">1</button>
+<button onclick="append('2')">2</button>
 
-<button onclick="document.querySelector( 'input' ).value = '' ">CLR</button>
+<button onclick="update('')">CLR</button>
 </body>
 </html>
