@@ -1,11 +1,50 @@
 <!DOCTYPE html>
 <meta charset="utf-8">
+<link rel="stylesheet" href="calc.css">
 <html>
 <body>
 <div>Hello Calc!</div>
-<input />
-<script src="calc.js"></script>
-<button onclick="append( '1' )" >1</button>
+<table>
+    <thead>
+        <tr>
+            <th colspan="4"><input /></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><button onclick="update( '' )" >AC</button></td>
+            <td><button onclick="append( 'back' )" >🔙</button></td>
+            <td><button onclick="append( '%' )" >%</button></td>
+            <td><button onclick="append( '/' )" >÷</button></td>
+        </tr> 
+        <tr>
+            <td><button onclick="append( '7' )" >7</button></td>
+            <td><button onclick="append( '8' )" >8</button></td>
+            <td><button onclick="append( '9' )" >9</button></td>
+            <td><button onclick="append( '*' )" >×</button></td>
+        </tr> 
+        <tr>
+            <td><button onclick="append( '4' )" >4</button></td>
+            <td><button onclick="append( '5' )" >5</button></td>
+            <td><button onclick="append( '6' )" >6</button></td>
+            <td><button onclick="append( '+' )" >+</button></td>
+        </tr> 
+        <tr>
+            <td><button onclick="append( '1' )" >1</button></td>
+            <td><button onclick="append( '2' )" >2</button></td>
+            <td><button onclick="append( '3' )" >3</button></td>
+            <td><button onclick="append( '-' )" >-</button></td>
+        </tr> 
+        <tr>
+            <td><button onclick="append( 'spin' )" >🔁</button></td>
+            <td><button onclick="append( '0' )" >0</button></td>
+            <td><button onclick="append( '.' )" >.</button></td>
+            <td><button onclick="calc()" >=</button></td>
+        </tr>   
+    </tbody>
+ 
+</table>
+<!-- <button onclick="append( '1' )" >1</button>
 <button onclick="append( '2' )" >2</button>
 <button onclick="append( '3' )" >3</button>
 <button onclick="append( '4' )" >4</button>
@@ -23,8 +62,9 @@
 <button onclick="append( '**' )" >^</button>
 <button onclick="append( '**0.5' )" >√</button>
 
-<button onclick="calc()">=</button>
+<button onclick="calc()">=</button> -->
 
-<button onclick="update('')">CLR</button>
+<!-- <button onclick="update('')">CLR</button> -->
+<script src="calc.js"></script>
 </body>
 </html>
