@@ -4,42 +4,42 @@
 <html>
 <body>
 <div>Hello Calc!</div>
-<table>
+<table class="table">
     <thead>
         <tr>
-            <th colspan="4"><input /></th>
+            <th colspan="4"><input class="display" /></th>
         </tr>
     </thead>
     <tbody>
         <tr>
-            <td><button onclick="update( '' )" >AC</button></td>
-            <td><button onclick="append( 'back' )" >🔙</button></td>
-            <td><button onclick="append( '%' )" >%</button></td>
-            <td><button onclick="append( '/' )" >÷</button></td>
+            <td><button class="input" onclick="update( '' )" >AC</button></td>
+            <td><button class="input" onclick="append( 'back' )" >🔙</button></td>
+            <td><button class="input" onclick="append( '%' )" >%</button></td>
+            <td><button class="input operator" onclick="append( '/' )" >÷</button></td>
         </tr> 
         <tr>
-            <td><button onclick="append( '7' )" >7</button></td>
-            <td><button onclick="append( '8' )" >8</button></td>
-            <td><button onclick="append( '9' )" >9</button></td>
-            <td><button onclick="append( '*' )" >×</button></td>
+            <td><button class="input" onclick="append( '7' )" >7</button></td>
+            <td><button class="input" onclick="append( '8' )" >8</button></td>
+            <td><button class="input" onclick="append( '9' )" >9</button></td>
+            <td><button class="input operator" onclick="append( '*' )" >×</button></td>
         </tr> 
         <tr>
-            <td><button onclick="append( '4' )" >4</button></td>
-            <td><button onclick="append( '5' )" >5</button></td>
-            <td><button onclick="append( '6' )" >6</button></td>
-            <td><button onclick="append( '+' )" >+</button></td>
+            <td><button class="input" onclick="append( '4' )" >4</button></td>
+            <td><button class="input" onclick="append( '5' )" >5</button></td>
+            <td><button class="input" onclick="append( '6' )" >6</button></td>
+            <td><button class="input operator" onclick="append( '+' )" >+</button></td>
         </tr> 
         <tr>
-            <td><button onclick="append( '1' )" >1</button></td>
-            <td><button onclick="append( '2' )" >2</button></td>
-            <td><button onclick="append( '3' )" >3</button></td>
-            <td><button onclick="append( '-' )" >-</button></td>
+            <td><button class="input" onclick="append( '1' )" >1</button></td>
+            <td><button class="input" onclick="append( '2' )" >2</button></td>
+            <td><button class="input" onclick="append( '3' )" >3</button></td>
+            <td><button class="input operator" onclick="append( '-' )" >-</button></td>
         </tr> 
         <tr>
-            <td><button onclick="append( 'spin' )" >🔁</button></td>
-            <td><button onclick="append( '0' )" >0</button></td>
-            <td><button onclick="append( '.' )" >.</button></td>
-            <td><button onclick="calc()" >=</button></td>
+            <td><button class="input" onclick="append( 'spin' )" >🔁</button></td>
+            <td><button class="input" onclick="append( '0' )" >0</button></td>
+            <td><button class="input" onclick="append( '.' )" >.</button></td>
+            <td><button class="input equal" onclick="calc()" >=</button></td>
         </tr>   
     </tbody>
  
